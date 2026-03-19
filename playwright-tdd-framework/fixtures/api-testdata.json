@@ -1,0 +1,26 @@
+{
+    "duplicateRepo": {
+        "endpoint": "/user/repos",
+        "body": {
+            "name": "Playwright-Test-Repo",
+            "description": "Test Repo"
+        },
+        "expectedCode": 422,
+        "expectedStatusMessage": "Unprocessable Entity",
+        "errorMessage": "Repository creation failed."
+    },
+    "createRepo": {
+        "endpoint": "/user/repos",
+        "body": {
+            "name": "Playwright-Test-Repo-Create",
+            "description": "This is a test repository created by Playwright"
+        },
+        "expectedCode": 201,
+        "expectedStatusMessage": "Created"
+    },
+    "deleteRepo": {
+        "endpoint": "/repos/bharathtechacademy05/Playwright-Test-Repo-Delete",
+        "expectedCode": 204,
+        "expectedStatusMessage": "No Content"
+    }
+}
